@@ -1,0 +1,43 @@
+
+{
+  "name": "URL TO PDF",
+  "version": "0.0.2",
+  "manifest_version": 3,
+  "description": "Convert any webpage to a PDF file.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage",
+    "debugger"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "commands": {
+    "convert-page-to-pdf": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P"
+      },
+      "description": "Convert current page to PDF"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' ; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["html2canvas.min.js", "jspdf.umd.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 
+
