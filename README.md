@@ -1,5 +1,5 @@
 # URL-to-PDF-Converter
-My project is a Chrome extension designed to convert web pages into PDF files with enhanced precision and customization. While the initial approach considered using the simple window.print() method, I opted for the more versatile html2canvas library to ensure better visual accuracy and control over the final output. Users can rename the generated PDF files for better organization, making it easier to manage their saved content.  
+My project is a Chrome extension designed to convert web pages into PDF files with enhanced precision and customization.I opted for versatile html2canvas library to ensure better visual accuracy and control over the final output. Users can rename the generated PDF files for better organization, making it easier to manage their saved content.  
 
 The extension works effectively with static web pages; however, handling dynamic pages presents challenges, especially for platforms like YouTube, Instagram, and Twitter that incorporate infinite scrolling. Capturing such content requires strategic improvements, and I am exploring solutions to enhance functionality in these scenarios.  
 
