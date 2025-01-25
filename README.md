@@ -1,1 +1,2 @@
 # URL-to-PDF-Converter
+A Chrome extension that allows users to convert web pages into high-quality PDF files with ease. This extension leverages the html2canvas library to capture and preserve web content accurately, offering features like customizable file names and improved handling of static pages. While it works well with standard web pages, challenges exist with dynamic and infinite-scrolling websites such as YouTube and Twitter, which I plan to address in future updates.
